@@ -1,5 +1,6 @@
 {
   "name": "animatedportfolio",
+  "homepage": "https://DannyJacome30.github.io/portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,10 +12,12 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3",
+    "react-scripts": "^4.0.3",
     "react-scroll": "^1.8.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +37,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh": "^2.8.6",
+    "gh-pages": "^3.2.3",
+    "pages": "0.0.16"
   }
 }

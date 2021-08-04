@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./../../index.css";
 import danny from "./../../images/Danny.png";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion} from "framer-motion";
 import { animateScroll as scroll } from "react-scroll";
 
 const contentVariants = {
@@ -21,28 +21,6 @@ const contentVariants = {
   },
 };
 
-const childrenVariants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.7,
-      type: "spring",
-      delay: 0.5,
-    },
-  },
-
-  exit: {
-    opacity: 0,
-    y: -200,
-    transition: { duration: 0.2 },
-  },
-};
 
 const Home = () => {
   // State
